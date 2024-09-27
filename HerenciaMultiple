@@ -1,0 +1,25 @@
+class X:
+    def __init__(self,A,B) :
+        self.A = A
+        self.B = B
+
+    def sumar (self) :
+        return F"la suma es : {self.A + self.B}"
+
+class Y(X):
+    def __init__(self, A, B,C):
+        super().__init__(A,B)
+        self.C = C
+
+class Z():
+    def __init__(self,A,B,C,D):
+        X.__init.__(self,A,B)
+        Y.__init.__(self,C)
+        self.D = D 
+    def Supersuma (self):
+        return F"la Super Suma es : {self.A +self.B +self.C +self.D}"
+    
+xyz1=z(1,2,3,4)
+
+print (xyz1.supersuma())
+
